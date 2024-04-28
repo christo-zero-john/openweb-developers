@@ -8,9 +8,10 @@
             name="viewport"
             content="width=device-width, initial-scale=1"
         />
+        <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
 
         <link rel="stylesheet" href="/defaults.css">
-        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/styles/index.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -23,63 +24,115 @@
 
     <body class="en-Oxanium container-fluid p-0">
         
-        <div id="navBar">
-            <!-- off-canvas navbar -->
-                <!-- offcanvas-buton -->
-                    <section class="fixed-top">
-                        <button class="btn p-1 m-3 bg-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                            <img src="/assets/img/menu1.png" alt="" class="menuIcon">
-                        </button>
-                    </section>
-
-                <!-- offcanvas-header -->
-                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header text-violet ">
-                        <p class="offcanvas-title fw-200" id="offcanvasWithBothOptionsLabel">OPENWEB DEVELOPERS</p>
-
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-
-                <!-- offcanvas-body -->
-                    <div class="offcanvas-body">
-                        <ul class="navList p-0 m-0">
-                            <li class="navItems pb-3 fw-100">Home</li>
-                            <li class="navItems pb-3 fw-100">About</li>
-                            <li class="navItems pb-3 fw-100">Hire</li>
-                            <li class="navItems pb-3 fw-100">Services</li>                        
-                            <li class="navItems pb-3 fw-100">Projects</li>
-                            <li class="navItems pb-3 fw-100">Testimonials</li>
-                        </ul>
-                        
-                    </div>
-                    </div>
-        
+        <div id="navBar"></div>
+        <div class="hero d-flex flex-column justify-content-center align-items-center">
+            <div id="changingText" class=" text-center col-10 mx-auto display-4 fw-300 text-light">
+                Welcome to the Domain of <br> Openweb Developers
+            </div>
         </div>
 
-        <header class="d-flex flex-column justify-content-center align-items-center text-light p-0 m-0">
-            <h1 class="fw-100 text-orange">OPENWEB DEVELOPERS</h1>
-            <p class="fw-100">Your Best WEB DEVELOPMENT Partner</p>
-        </header>
-
-        <main class="">
-            <div class="text-center mt-3 mt-md-5" id="about" >
-                
-                <section class="row justify-content-center">
-                    <section class="col-md-7 ">
-                        <h2 class="display-1 en-iceland m-0 p-0 text-violet">Who We Are</h2>
-                        <p class="px-3 px-md-5 align-self-center">           
-                            We are a bunch of passionate youngster students who build, maintain and repair websites. We build all kinds of static websites from simple portfolios to advanced small scale business websites. We mainly works on HTML, CSS, BOOTSTRAP and JavaScript websites. But we are still able to incoporate database to our websites and are able to create small scale E-Commerce & Business websites. 
-                        </p>
-                    </section>
-                    <img src="/assets/img/aboutImg.jpg" alt="" class="col-md-4">
-                </section>
+        <main class="main">
+            <div id="adboutSection" class="px-3 px-md-5 py-4 d-md-flex flex-row justify-content-around align-items-center">
+                <div id="aboutTxt" class="col-12 col-md-8 mx-auto text-center">
+                    <div class="headings w-fit mb-3">
+                        <h2 class="m-0 p-0 text-secondary fw-300 display-5">About</h2>
+                        <hr class="m-0 p-0 headingUnderLine col-9">
+                    </div>
+                    <p class="fw-100 fs-5">
+                        We are a bunch of tech buddies working together to deliver seemless and quality service to our clients. We work online and deliver on time. Our motto is to create QUALITY product in CHEAPEST cost. Let us Help you build your dream website. We undertake website designing, development, maintanenace, modification and many more...
+                    </p>
+                </div>
+                <img src="/assets/img/aboutImg.png" alt="" class="col-6 col-md-3 mx-auto d-block">
             </div>
 
-            <div id="hire" class="mt-3 mt-md-5 text-center">
-                <h2 class="display-1 en-iceland m-0 p-0 text-violet">Hire US</h2>
-                <p class="px-3 px-md-5">
-                    We are a bunch of passionate students who are improving ourself day by day and considers our works as a duty than anything else. We considers our client as the king and tries our best to meet their requirements and do our best to statisfy their needs. Though we work as part time, we deliver final products in the specified time and manages all other works as such. Though we are currently focused on website related services, we will soon add web apps to our list of provided services. We are capable of designing and developing the websites by ourself or develop it from the design provided by the client. 
-                </p>
+    <!-- Main service categories (What we are Best at) -->
+            <div id="servicesSection" class="px-3 py-4 ">
+                <div class="headings w-fit mb-3 ">
+                        <h2 class="m-0 p-0 text-secondary fw-300 display-5">What we are Best at</h2>
+                        <hr class="m-0 p-0 headingUnderLine col-9">
+                </div>
+                <div id="servicesItems" class="d-flex  flex-row justify-content-around  align-items-center flex-wrap"> 
+        <!-- Web Development -->
+                    <div class="serviceItem col-11 col-md-5 mx-auto fs-5 fw-200 p-2 transition-07 m-2">
+                        <img src="/assets/img/webDevelopment.png" alt="" class="icon col-2 d-block">
+                        <p class="serviceTitle fw-400">Web Development</p>
+                        <hr class="col-9 m-0 p-0">
+                        <p class="serviceDesc">
+                            We develop low cost, high quality websites which are delivered in time. That is what makes us unique among our competitors.
+                    </div>  
+                    
+        <!-- Web Designing -->
+                    <div class="serviceItem col-11 col-md-5 mx-auto fs-5 fw-200 p-2 transition-07 m-2">
+                        <img src="/assets/img/webDesigning.png" alt="" class="icon col-2 d-block">
+                        <p class="serviceTitle fw-400">Web Designing</p>
+                        <hr class="col-9 m-0 p-0">
+                        <p class="serviceDesc">
+                        While we are Good at web development, we are also good at web designing too. For those clients who are not able to provide their design for us to develop websites, we help them with designing as well.
+                    </div>  
+
+        <!-- Website Modification -->
+                    <div class="serviceItem col-11 col-md-5 mx-auto fs-5 fw-200 p-2 transition-07 m-2">
+                        <img src="/assets/img/websiteModifications.png" alt="" class="icon col-2 d-block">
+                        <p class="serviceTitle fw-400">Website Modifications / Updations</p>
+                        <hr class="col-9 m-0 p-0">
+                        <p class="serviceDesc">
+                        We can also help you in modifying or updating your already completed websites. Even if its not created by us, as long as you could provide us the original code, we could help you modify, update or add more features to your website.
+                    </div>
+
+        <!-- Website maintenace -->
+                    <div class="serviceItem col-11 col-md-5 mx-auto fs-5 fw-200 p-2 transition-07 m-2">
+                        <img src="/assets/img/websiteMaintenace.png" alt="" class="icon col-2 d-block">
+                        <p class="serviceTitle fw-400">Website Maintenace</p>
+                        <hr class="col-9 m-0 p-0">
+                        <p class="serviceDesc">
+                        We provide lifelong maintenance for all our websites. Cost for website maintenance depends on the type of maintenance. maintenance include bug fixes, including additional features, change of domain name etc... Bug Fixes are completely free as we believe that a bug free product is the right of our clients.
+                    </div>         
+                    
+        <!-- Website Domain name Integration -->
+
+        
+        <!-- Brand Logo Design -->
+
+
+        <!-- Poster Design -->
+
+
+        <!-- Brochure Design -->
+
+        <!-- Main service categories End -->
+            </div>
+
+
+        <!-- Detailed Services category wise -->
+            <div id="detailedServicesCategorywise">
+
+            <!-- Service: Web Development -->
+                <div id="webDevelopmentCategory" class="">
+                    <!-- Web Development- Category Heading -->
+                    <div class="headings text-center">
+                        <p class="serviceItemTitle display-5 pt-4 fw-300">Web Development</p>
+                            <img src="/assets/img/webDevelopment.png" alt="" class="icon col-6 col-md-3">
+                    </div>
+
+                    <!-- Web Development- Category Service Items -->                    
+                    <div class="webDevelopmentServices d-flex flex-row justify-content-center align-items-center flex-wrap">
+                        <div class="categorywiseServiceItem col-11 col-md-3 m-2 ">
+                            <div class="card-front">
+                                <div class="headings text-center">
+                                    <img src="/assets/img/portfolioWebite.png" alt="" class="icon col-3 col-md-3">
+                                    <p class="Title fs-2 pt-4 fw-300">Portfolio Website</p>
+                                </div>
+                            </div>
+                            <p class="desc fw-100">
+                                High Quality Portfolio websites. Single page multi page with Seperate section for resume/CV. 
+
+                                <p class=" fs-5 text-center priceText">From <span class=" fs-3 py-1 px-3 price">₹899</span> Onwards</p>
+                            </p>
+                        </div>
+                    </div>
+        
+                <!-- Detailed Services category wise End-->
+                    </div>
             </div>
         </main>
 
@@ -95,5 +148,11 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <!-- my JS -->
+        <script src="/scripts/index.js"></script>
+
+    <!-- components -->
+        <script src="/scripts/components.js"></script>
+        <link rel="stylesheet" href="/styles/components.css">
     </body>
 </html>
